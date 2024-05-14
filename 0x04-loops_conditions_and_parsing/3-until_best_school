@@ -3,12 +3,8 @@
 # Initialize a counter
 counter=0
 
-# Run the loop until counter is equal to 10
 until [ $counter -eq 10 ]
 do
-    # Display "Best School"
     echo "Best School"
-    
-    # Increment the counter
     ((counter++))
 done
