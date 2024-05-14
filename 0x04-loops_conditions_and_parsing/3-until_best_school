@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
+# Print 'best school' until i less than 10
 
-# Initialize a counter
-counter=0
+i=0
 
-until [ $counter -eq 10 ]
+until [ $i -eq 10 ]
 do
     echo "Best School"
-    ((counter++))
+    ((i++))
 done
