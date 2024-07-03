@@ -5,12 +5,12 @@
 # Create the HTML file that contains "Hello World!"
 # Configure Nginx to serve the custom HTML file
 
-sudo apt-get update
-sudo apt-get install -y nginx
+apt-get update
+apt-get install -y nginx
 
 echo "Hello World!" | sudo tee /var/www/html/index.html
 
-sudo bash -c 'cat > /etc/nginx/sites-available/default << EOF
+bash -c 'cat > /etc/nginx/sites-available/default << EOF
 server {
     listen 80 default_server;
     listen [::]:80 default_server;
