@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-
 # Update package lists
 # Install Nginx
 # Create the HTML file that contains "Hello World!"
@@ -12,11 +11,11 @@ mkdir /etc/nginx/html
 touch /etc/nginx/html/index.html
 echo "Hello World!" > /etc/nginx/html/index.html
 printf %s "server {
-listen 80 default_server;
-listen [::]:80 default_server;
-root /var/www/html;
-index index.html;
+     listen      80 default_server;
+     listen      [::]:80 default_server;
+     root        /etc/nginx/html;
+     index       index.html index.htm;
 }
 " > /etc/nginx/sites-available/default
 
-sudo service nginx restart
+service nginx restart
