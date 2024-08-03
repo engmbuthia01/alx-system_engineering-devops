@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+# general syntax ssh [options] user@hostname
+# -i specifies private key file to use
+
+ssh -i ~/.ssh/school ubuntu@100.26.122.20
